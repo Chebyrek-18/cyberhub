@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расторопша</title>
+    <link rel="stylesheet" href="media/assets/css/style.css">
+</head>
+
+<body>
+    <section class="fon">
+        <header class="сontainer">
+            <img src="media/assets/image/logo.png" alt="Логотип">
+            <nav>
+                <a href="#">Главная</a>
+                <a href="#">Продукты</a>
+                <a href="#">Новости</a>
+                <a href="#">Партнеры</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </header>
+        <main class="сontainer">
+            <div class="main_text">
+                <h1><span>Расторопшу</span> пьём всегда</h1>
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад гор
+                    текстами инициал. Правилами семь, взобравшись если снова дал заглавных безорфографичный необходимыми
+                    напоивший злых, буквоград это бросил грамматики, дорогу реторический там вскоре! Точках его
+                    грамматики букв, переписали большой океана.</p>
+            </div>
+            <div class="main_img">
+                <img src="media/assets/image/img01.png" alt="" class="ras">
+            </div>
+        </main>
+        <div class="block container">
+            <img src="media/assets/image/img01.png" alt=""
+                onclick="slider('media/assets/image/img01.png');fon('#681a74')">
+            <img src="media/assets/image/img02.png" alt=""
+                onclick="slider('media/assets/image/img02.png');fon('#111576')">
+            <img src="media/assets/image/img03.png" alt=""
+                onclick="slider('media/assets/image/img03.png');fon('#77071f')">
+        </div>
+    </section>
+    <script>
+        function slider(image) {
+            document.querySelector(".ras").src = image;
+        }
+        function fon(color) {
+            const sec = document.querySelector(".fon");
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
