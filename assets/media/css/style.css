@@ -182,12 +182,16 @@ nav a:hover::before {
     cursor: pointer;
     border: none;
     top: calc(50% - 60px/2 + 0.5px);
-    background: url(.png),
-        #E51515;
+    background: #E51515;
     box-shadow: 0px 0px 30px rgba(218, 1, 0, 0.4);
     border-radius: 30px;
 }
 
+.btn_bron:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #E51515,
+        0px 0px 10px #E51515 inset;
+}
 
 .btn_about {
     /* Border */
@@ -611,7 +615,7 @@ span {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-    background: url(.png), #E51515;
+    background: #E51515;
     box-shadow: 0px 0px 30px rgba(218, 1, 0, 0.4);
     border-radius: 30px;
     line-height: 20px;
@@ -724,7 +728,7 @@ span {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-    background: url(.png), #E51515;
+    background: #E51515;
     box-shadow: 0px 0px 30px rgba(218, 1, 0, 0.4);
     border-radius: 30px;
     line-height: 20px;
@@ -759,6 +763,9 @@ span {
 
 .form_input {
     width: 476px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
     height: 57px;
     background: rgba(0, 0, 0, 0.39);
     border: 2px solid #E51515;
